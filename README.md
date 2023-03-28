@@ -16,31 +16,35 @@ A code editor such as Visual Studio Code, PyCharm, or Sublime Text
 
 ## Installing
 
-Clone this repository to your local machine.
-```git clone https://github.com/username/recently-played-store.git ```
+1. Clone this repository to your local machine.
+```git clone https://github.com/venkat2186/pythonplaylist.git ```
 
+2. Change the current directory to the cloned repository.
+```cd recently-played-store ```
 
+3. Install the required packages by running the following command.
+```pip install -r requirements.txt ```
 
-ruby
-pod 'DoubleArrayLibrary'
+## Running the script
+1. Open the Python script in your preferred code editor.
+2. Create a new instance of the RecentlyPlayedStore class with the desired initial capacity and max songs per user.
+```store = RecentlyPlayedStore(initial_capacity, max_songs_per_user)```
 
+3. Use the play_song method to add a new song to the store for a user.
+```store.play_song(song, user)```
 
-## Usage
-Using DoubleThisArray is simple. Import the library, create an array of Floats, and then call the doubleThisArray function to double the elements:
+4. Use the recently_played method to fetch the recently played songs for a user.
+```store.recently_played(user)```
 
-swift
-import DoubleThisArray
+## Running the tests
+1. Open the terminal or command prompt.
+2. Change the current directory to the cloned repository.
+```cd recently-played-store```
+3. Run the tests using the following command.
+```pytest```
 
-let inputArray: [Float] = [1.0, 2.0, 3.0, 4.0]
-let doubledArray = doubleThisArray(inputArray)
-doubledArray will now contain the doubled values of the input array: [2.0, 4.0, 6.0, 8.0].
-
-
-
-## Author
-
-LovaRK, plovark@gmail.com
+## Authors
+venkateshbabu, venkatbalasundaram3@gmail.com
 
 ## License
-
-DoubleArrayLibrary is available under the MIT license. See the LICENSE file for more info.
+This project is licensed under the MIT License - see the LICENSE.md file for details.
