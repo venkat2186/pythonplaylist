@@ -2,9 +2,10 @@ from SongNodeee import SongNode
 
 
 class RecentlyPlayedStore:
-    def __init__(self, initial_capacity, max_songs_per_user):
+    def __init__(self, initial_capacity, max_songs_per_user, user_id):
         self.capacity = initial_capacity
         self.max_songs_per_user = max_songs_per_user
+        self.user_id=user_id
         self.head = None
         self.tail = None
         self.played_songs = {}
